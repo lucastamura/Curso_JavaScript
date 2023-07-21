@@ -1,0 +1,39 @@
+<html>
+<body>
+
+    <script>
+        //Aplicação calculadora dinâmica
+
+        var num1 = prompt("Informe o primerio número...");
+        var sinal = prompt("Informe o sinal da sua operação...");
+        while (sinal != '-' && sinal != '+' && sinal !='*' && sinal !='/'){
+            alert("Informe um sinal válido...");
+            var sinal = prompt("Informe o sinal da sua operação...");
+        }
+        var num2 = prompt("Informe o outro número...");
+
+        var resultadoFinal = 0;
+
+        num1 = parseInt(num1)
+        num2 = parseInt(num2)
+
+        if (sinal == '+'){
+            resultadoFinal = num1 + num2;
+            alert(resultadoFinal);
+        }else if (sinal == '-'){
+            resultadoFinal = num1 - num2;
+            alert(resultadoFinal);
+            
+        }else if (sinal == '*'){
+            resultadoFinal = num1 * num2;
+            alert(resultadoFinal);
+            
+        }else if (sinal == '/'){
+            resultadoFinal = num1 /num2;
+            alert(resultadoFinal);
+
+        }
+
+    </script>
+</body>
+</html>
