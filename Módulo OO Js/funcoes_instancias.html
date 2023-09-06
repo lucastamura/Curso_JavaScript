@@ -1,0 +1,23 @@
+<html>
+<body>
+
+    <script>
+        function Pessoa(){
+            this.nome = "Guilherme";
+            this.idade = 27;
+            this.printNome = function(){
+                alert(this.nome);
+            }
+        }
+
+        var pessoa = new Pessoa();
+        var pessoa_2 = new Pessoa();
+
+        pessoa.printNome();
+        
+        pessoa.nome = "João";
+
+        // alert(pessoa2.nome);
+    </script>
+</body>
+</html>
